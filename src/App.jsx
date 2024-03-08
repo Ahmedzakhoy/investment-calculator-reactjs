@@ -12,7 +12,7 @@ function App() {
     duration: 10,
   });
 
-  const inputIsValid = userInput.duration >= 1 && userInput.duration <= 999;
+  const inputIsValid = userInput.duration >= 1 && userInput.duration <= 99;
 
   function handleChange(inputIdentifier, newValue) {
     setUserInput((prevUserInput) => {
@@ -29,7 +29,7 @@ function App() {
       <UserInput userInput={userInput} onChange={handleChange} />
       {!inputIsValid && (
         <p className="center">
-          Please enter a duration that is between 1 and 999 years.
+          Please enter a duration that is between 1 and 99 years.
         </p>
       )}
       {inputIsValid && <Results input={userInput} />}

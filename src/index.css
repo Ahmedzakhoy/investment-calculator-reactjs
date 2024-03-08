@@ -73,6 +73,15 @@ body {
   text-align: right;
 }
 
+@media only screen and (max-width: 550px) {
+  #result {
+    padding: 0;
+    border-spacing: 0.5rem;
+  }
+  
+  
+}
+
 #result thead {
   font-size: 0.7rem;
   color: #83e6c0;
